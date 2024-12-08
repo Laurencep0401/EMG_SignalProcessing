@@ -1,7 +1,7 @@
 %% Code description and table of contents
 % General infos:
 %   - Made by: Laurence Poirier
-%   - Last update: 29/11/2024
+%   - Last update: 07/12/2024
 
 % Description:
 % This code was made to design different filters and test them on a
