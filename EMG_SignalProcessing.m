@@ -110,7 +110,7 @@ fc_LE = 10; % Low Cut frequency (Hz). Recommendation:
 %% Section 5 - Band-Stop/Notch (BS) Filter Design and Signal Processing
 % For designing all the BS Filters you want to test and compare. To do so,
 % just change the parameters in the Data Preparation section along with the 
-% name (beware nomination comnditions below) and run that section again.
+% name (beware nomination conditions below) and run that section again.
 
 % DATA PREPARATION
 BS= 'BS1'; % Variable Name of the BS Filter. Here is how to name the  
@@ -144,7 +144,7 @@ eval(['S_RectLE_' varName_BS ' = filtered_LE_BS']);
 %% Section 6 - Band-Pass (BP) Filter Design and Signal Processing
 % For designing all the BP Filters you want to test and compare. To do so,
 % just change the parameters in the Data Preparation section along with the 
-% name (beware nomination comnditions below) and run that section again.
+% name (beware nomination conditions below) and run that section again.
 
 % DATA PREPARATION
 BP = 'BP30'; % Variable Name of the BS Filter. Here is how to name the  
