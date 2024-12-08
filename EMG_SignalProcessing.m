@@ -124,7 +124,7 @@ cutoff_freq_range_BS = 1;
         % E.g. If the hum_freq_BS = 60 Hz and the cutoff_freq_range_BS = 1 Hz, 
         % the cutoff frequencies will be 59 Hz and 61 Hz, respectively.
 n_harm_BS = floor(fNy/hum_freq_BS); % Number of harmonics
-        % If not manually precised, enter: floor(fNy/cutoff_freq_BS)
+        % If not manually precised, enter: floor(fNy/hum_freq_BS)
 filter_type_BS = 'bandstopiir'; % BS Filter response and type. Options:
         % 'lowpassfir' | 'lowpassiir' | 'highpassfir' | 'highpassiir' |
         % 'bandpassfir' | 'bandpassiir' | 'bandstopfir' | 'bandstopiir' |
