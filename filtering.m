@@ -14,11 +14,11 @@ varName = filter_name; % Get the name of variable as a string
                end
 
            else 
-               d = designfilt(filter_type,'FilterOrder',filter_order, 'HalfPowerFrequency1',(cutoff_freq*i)-cutoff_freq_range_BS,'HalfPowerFrequency2',(cutoff_freq*i)+cutoff_freq_range_BS,'DesignMethod',filter_choice,'SampleRate',fs);
+               dd = designfilt(filter_type,'FilterOrder',filter_order, 'HalfPowerFrequency1',(cutoff_freq*i)-cutoff_freq_range_BS,'HalfPowerFrequency2',(cutoff_freq*i)+cutoff_freq_range_BS,'DesignMethod',filter_choice,'SampleRate',fs);
                if strcmp(filtering_type, 'bidirectional')
-                    filtered = filtfilt(d, filtered); % Zero-phase filtering
+                    filtered = filtfilt(dd, filtered); % Zero-phase filtering
                else
-                    filtered = filter(d, filtered); % Forward filtering
+                    filtered = filter(dd, filtered); % Forward filtering
                end
            end
        end
