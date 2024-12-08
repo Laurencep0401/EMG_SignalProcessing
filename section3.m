@@ -50,8 +50,6 @@ box("off"); ax = gca; ax.FontSize = 14; ax.FontWeight = 'bold';
 
 nexttile, pspectrum(S_raw, fs);
 wLine = findobj(gca, 'Type', 'Line'); % Find line objects in the current axes
-set(wLine, 'LineWidth', 3);           % Set the line width to 2 (or any value)
-xlabel('Frequency (Hz)', 'FontSize', 18, 'FontWeight', 'bold');
-ylabel('Power Spectrum (dB)', 'FontSize', 18, 'FontWeight', 'bold');
+set(wLine, 'LineWidth', 3);           % Set the line width to 3
 title('Signal in the Frequency Domain - Power Spectrum in dB');
 box("off"); ax = gca; ax.FontSize = 14; ax.FontWeight = 'bold';
